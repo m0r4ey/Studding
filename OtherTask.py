@@ -4,9 +4,7 @@ students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
 avg_grades = {}
 
 students = list(students)
-
+students.sort()
 for i in range (0,5):
-    grades[i] = sum(grades[i]) / len(grades[i])
-    avg_grades.update ({students[i] : grades[i]})
-
+    avg_grades.update ({ students[i] : sum(grades[i]) / len(grades[i] )})
 print (avg_grades)
